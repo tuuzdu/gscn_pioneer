@@ -1,0 +1,7 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
+from gscn_pioneer_mission.nodes import mission_node
+
+if __name__ == '__main__':
+    mission_node()

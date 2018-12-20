@@ -1,0 +1,23 @@
+plugin_blacklist: []
+# - common
+# - safety_area
+# - extras
+# - image_pub
+# - vibration
+# - distance_sensor
+# - rangefinder
+# - sys_status
+
+plugin_whitelist:
+- sys_*
+- altitude
+- command
+- global_position
+- imu
+- local_position
+# - manual_control
+- param
+- setpoint_position
+- setpoint_raw
+- waypoint
+- rc_io

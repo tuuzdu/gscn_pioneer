@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<launch>
+    <arg name="m" default="test_mission"/>
+    <arg name="mission_file" default="$(find gscn_pioneer_mission)/missions/$(arg m).yaml"/> 
+    <!-- <rosparam command="load" file="$(arg mission_file)"/> -->
+
+    <include file="$(find gscn_pioneer_mission)/launch/gscn_mavros.launch"/>
+
+    <node name="gscn_pioneer_mission" pkg="gscn_pioneer_mission" type="mission_node" output="screen">
+        <rosparam command="load" file="$(arg mission_file)"/>
+    </node>
+
+</launch>
