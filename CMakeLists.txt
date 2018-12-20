@@ -19,9 +19,14 @@ catkin_install_python(
 )
 
 install(
-    FILES
-        launch/mission.launch
-        launch/gscn_mavros.launch
+    DIRECTORY
+        launch/
     DESTINATION
         ${CATKIN_PACKAGE_SHARE_DESTINATION}/launch
+)
+install(
+    DIRECTORY 
+	missions/
+    DESTINATION
+	${CATKIN_PACKAGE_SHARE_DESTINATION}/missions
 )
