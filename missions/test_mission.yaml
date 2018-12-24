@@ -1,11 +1,16 @@
 # The marker positions in the trackable's frame of reference:
 #
 waypoints:
-  - lat: 60.008217
-    lon: 30.320849
-    alt: 20.0
+  - lat: 60.002189
+    lon: 30.367841
+    alt: 10.0
     delay: 10
-  - lat: 60.007914
-    lon: 30.320765
-    alt: 20.0
+  - lat: 60.002125
+    lon: 30.368326
+    alt: 15.0
     delay: 5
+  - lat: 60.002011
+    lon: 30.367999
+    alt: 10.0
+    delay: 5
+
