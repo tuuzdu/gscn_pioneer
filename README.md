@@ -5,6 +5,7 @@ With `nix-build`:
 ```sh
 nix-build -I airapkgs/ -A de_dev
 source result/setup.bash
+roslaunch gscn_pioneer_mission mission.launch
 ```
 
 With `nix-shell`:
@@ -16,6 +17,6 @@ cd ..
 nix-shell -p gcc
 catkin_make
 exit
-setup devel/setup.bash
+source devel/setup.bash
 roslaunch gscn_pioneer_mission mission.launch
 ```
