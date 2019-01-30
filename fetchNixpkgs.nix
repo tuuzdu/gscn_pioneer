@@ -1,5 +1,5 @@
-{ rev    ? "005c3812ca6e1525103a0a18e927d3c052e9fe17"             # The Git revision of nixpkgs to fetch
-, sha256 ? "0w0qfsmcqdilj9c6jxx89q7jlc7bl25zlapfk8djn0hl7vgab2ik" # The SHA256 of the downloaded data
+{ rev    ? "c88e3f57f13d144ce37a4814dc92d5fc36f73174"             # The Git revision of nixpkgs to fetch
+, sha256 ? "0fmv1mzak2b7pkxpw1vcf5blsw472jy65jqlpamvhjnhv5zgmb9r" # The SHA256 of the downloaded data
 , system ? builtins.currentSystem                                 # This is overridable if necessary
 }:
 

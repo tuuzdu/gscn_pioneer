@@ -3,7 +3,7 @@
 With `nix-build`:
 
 ```sh
-nix-build -I airapkgs/ -A de_dev
+nix-build release.nix
 source result/setup.bash
 roslaunch gscn_pioneer_mission mission.launch
 ```
