@@ -1,0 +1,36 @@
+<?xml version="1.0" ?>
+<!--
+  Various useful properties such as constants and materials 
+ -->
+<robot name="xacro_properties" xmlns:xacro="http://ros.org/wiki/xacro">
+  <xacro:property name="M_PI" value="3.1415926535897931" /> 
+
+    <material name="White">
+      <color rgba="0.9 0.9 0.9 1"/>
+    </material>
+
+    <material name="Grey">
+      <color rgba="0.6 0.6 0.6 0.3"/>
+    </material>
+
+    <material name="Grey_frame">
+      <color rgba="0.6 0.6 0.6 1"/>
+    </material>
+
+    <material name="Black">
+      <color rgba="0.1 0.1 0.1 1"/>
+    </material>
+
+    <material name="Red">
+      <color rgba="0.7 0.2 0.1 1"/>
+    </material>
+
+    <material name="Grey_blue">
+      <color rgba="0.1 0.1 0.3 0.3" />
+    </material>
+
+    <material name="Orange">
+      <color rgba="1.0 0.4 0.0 1"/>
+    </material>
+
+</robot>

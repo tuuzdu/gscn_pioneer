@@ -7,7 +7,7 @@
 
 mkRosPackage rec {
   name = "${pname}-${version}";
-  pname = "gscn_pioneer_mission";
+  pname = "gscn_pioneer";
   version = "master";
 
   src = ./.;
@@ -17,7 +17,7 @@ mkRosPackage rec {
 
   meta = with stdenv.lib; {
     description = "Geoscan Pioneer mavros";
-    homepage = http://github.com/tuuzdu/gscn_pioneer_mission;
+    homepage = http://github.com/tuuzdu/gscn_pioneer;
     license = licenses.bsd3;
     maintainers = [ maintainers.tuuzdu ];
   };

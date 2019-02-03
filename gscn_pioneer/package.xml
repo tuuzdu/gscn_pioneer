@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>gscn_pioneer</name>
+  <version>0.0.0</version>
+  <description>Stack for Geoscan Pioneer qudrocopter</description>
+  <maintainer email="tvvzdv@gmail.com">Ivan Biriuk</maintainer>
+  <license>BSD</license>
+  <url type="repository">https://github.com/tuuzdu/gscn_pioneer</url>
+  <author email="tvvzdv@gmail.com">Ivan Biriuk</author>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <export>
+    <metapackage/>
+  </export>
+
+</package>

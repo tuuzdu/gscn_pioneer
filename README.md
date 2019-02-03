@@ -1,4 +1,4 @@
-# gscn_pioneer_mission
+# Geoscan Pioneer ROS stack
 
 With `nix-build`:
 
@@ -12,7 +12,7 @@ With `nix-shell`:
 
 ```sh
 mkdir ~/ws/src -p && cd ~/ws/src && catkin_init_workspace
-git clone https://github.com/tuuzdu/gscn_pioneer_mission.git
+git clone https://github.com/tuuzdu/gscn_pioneer.git
 cd ..
 nix-shell -p gcc
 catkin_make

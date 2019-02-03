@@ -1,0 +1,15 @@
+<launch>
+  <param name="robot_description"
+	 command="$(find xacro)/xacro.py '$(find theatre_uav_description)/urdf/test_model.xacro'" />
+
+  <!-- Combine joint values -->
+  <node name="robot_state_publisher" pkg="robot_state_publisher" type="state_publisher"/>
+  <node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher" />
+
+  <!-- Show in Rviz   -->
+  <node name="rviz" pkg="rviz" type="rviz" args="-d $(find theatre_uav_description)/rviz/config.rviz"/>
+  <include file="$(find monocular_pose_estimator)/launch/demo_ps3eye.launch"/>
+<!--  <include file="$(find monocular_pose_estimator)/launch/uvc_test.launch"/> -->
+  <node name="tf_pose_node" pkg="theatre_uav_pose" type="theatre_uav_pose" />
+
+</launch>

@@ -1,0 +1,12 @@
+<launch>
+
+	<arg name="camera_altitude" default="2.7"/>
+
+<!--	<node name="pose_node" pkg="theatre_uav_pose" type="theatre_uav_pose" output="screen"/>-->
+
+	<node pkg="tf" type="static_transform_publisher" name="camera_to_odom" args="0 0 $(arg camera_altitude) 0 0 3.1415926535897931 odom_link camera_link 40" />
+
+<!--<node pkg="tf" type="static_transform_publisher" name="camera_to_odom" args="0 0 0 0 0 0 base_link imu_link 30" />-->
+
+
+</launch>

@@ -3,7 +3,6 @@ project(gscn_pioneer_mission)
 
 find_package(catkin REQUIRED 
     COMPONENTS
-        mavros
         rospy
 )
 
@@ -26,7 +25,7 @@ install(
 )
 install(
     DIRECTORY 
-	missions/
+	   missions/
     DESTINATION
-	${CATKIN_PACKAGE_SHARE_DESTINATION}/missions
+	   ${CATKIN_PACKAGE_SHARE_DESTINATION}/missions
 )
