@@ -8,20 +8,20 @@
 
 	<link name="frame">
 		<collision>
-			<origin	xyz="0 0 0" rpy="0 0 0" />
+			<origin	xyz="-0.07968 -0.07968 -0.077" rpy="0 0 0" />
 			<geometry>
-				<cylinder radius="0.8" length="0.25"/>
+				<cylinder radius="0.2" length="0.2"/>
 			</geometry>
 		</collision>
 			<visual>
-				<origin	xyz="0 0 0" rpy="${M_PI/2} 0 0" />
+				<origin	xyz="-0.085 -0.085 -0.077" rpy="0 0 0" />
 				<geometry>
-					<mesh filename="package://gscn_pioneer_description/meshes/frame.stl" />
+					<mesh filename="package://gscn_pioneer_description/meshes/pioneer_frame.stl" />
 				</geometry>
-				<material name="Red" />
+				<material name="Grey_frame" />
 			</visual>
 		<inertial>
-			<mass value="1.5"/>
+			<mass value="0.4"/>
 			<inertia 	ixx="0" ixy="0" ixz="0" 
 						iyy="0" iyz="0" 
 						izz="0" />
@@ -29,10 +29,8 @@
 	</link>
 
 <!-- Build copter rays -->
-	<ray_stick side="r" num="1" angle="-${M_PI/6}" />
-	<ray_stick side="r" num="2"	angle="-${M_PI/2}" />
-	<ray_stick side="r" num="3" angle="-${M_PI*5/6}" />
-	<ray_stick side="l" num="1"	angle="${M_PI/6}" />
-	<ray_stick side="l" num="2"	angle="${M_PI/2}" />
-	<ray_stick side="l" num="3" angle="${M_PI*5/6}" />  
+	<ray_stick side="r" num="1" angle="-${M_PI/4}" />
+	<ray_stick side="r" num="2"	angle="-${M_PI*3/4}" />
+	<ray_stick side="l" num="1"	angle="${M_PI/4}" />
+	<ray_stick side="l" num="2"	angle="${M_PI*3/4}" />
 </robot>
