@@ -6,7 +6,7 @@
 	<xacro:include filename="$(find gscn_pioneer_description)/urdf/common_properties.xacro"/>
 <!-- Build the body frame -->
 
-	<link name="frame">
+	<link name="base_link">
 		<collision>
 			<origin	xyz="-0.07968 -0.07968 -0.077" rpy="0 0 0" />
 			<geometry>
@@ -18,7 +18,7 @@
 				<geometry>
 					<mesh filename="package://gscn_pioneer_description/meshes/pioneer_frame.stl" />
 				</geometry>
-				<material name="Grey_frame" />
+				<material name="White" />
 			</visual>
 		<inertial>
 			<mass value="0.4"/>
